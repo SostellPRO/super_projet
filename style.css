@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 700;
+    padding: 20px;
+    padding-bottom: 20px;
+    background: white;
+    width: 80%;
+    margin: auto;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    margin: 5px 5px;
+    position: relative;
+}
+
+nav li:first-child {
+    color: purple;
+}
+
+nav li:first-child::before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: purple;
+    transform: translateY(-20px);
+}
+
+nav li:hover::before {
+        content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: purple;
+    transform: translateY(-20px);
+}
+
+nav li:last-child::before {
+    background: none;
+}
+
+nav li:nth-child(8) {
+    background: lightgrey;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header{
+    background: url(./assets/img/bg.jpg) center/cover fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+}
+
+.logo img {
+position: fixed;
+}
+
+header h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
+header button {
+background-color: rgba(0, 0, 0, 0.057);
+color: white;
+margin-bottom: 30px;
+border: 1px solid white;
+padding: 10px;
+ text-transform: uppercase;
+ font-weight: 600;
+ font-size: 0.5rem;
+ letter-spacing: 0.25rem;
+}
+
+header button:hover {
+    color: black;
+    background: white;
+    transition: 0.2s;
+}
+
+.header-text {
+    text-align: center;
+    font-weight: 700;
+    padding: 20px 0 ;
+    background: white;
+    width: 80%;
+margin: auto;
+}
+
+.icon-part {
+display: flex;
+justify-content: center;
+align-items: center;
+    background: black;
+    width: 80%;
+    margin: auto;
+}
+
+.icon-part-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin: auto;
+}
+
+.list-icon-part {
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.lip-logo {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.list-icon-part h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.list-icon-part p {
+    margin-bottom: 15px;
+}
+
+.list-icon-part button {
+background-color: rgba(0, 0, 0, 0.057);
+color: white;
+margin-bottom: 30px;
+border: 1px solid white;
+margin-bottom: 40px;
+padding: 10px;
+}
+
+.list-icon-part button:hover {
+    color: black;
+    background: white;
+    transition: 0.2s;
+}
+
+.news-part {
+    background: gainsboro;
+    width: 80%;
+    margin: auto;
+}
+
+.header-news {
+display: grid;
+grid-template-columns: 70% 30%;
+padding: 40px;
+}
+
+.left-part h2 {
+text-transform: uppercase;
+font-size: 1.5rem;
+font-weight: 400;
+}
+
+.left-part p {
+    font-weight: 700;
+}
+
+.right-part button {
+background-color: rgba(0, 0, 0, 0);
+font-size: 0.75rem;
+font-weight: bolder;
+color: black;
+margin-bottom: 30px;
+text-transform: uppercase;
+border: 1px solid black;
+margin-bottom: 40px;
+padding: 10px;
+}
+
+.main-news {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.main-news-container {
+display: flex;
+justify-content: space-evenly;
+}
+
+.card {
+    width: 25%;
+    position: relative;
+}
+
+ .card img {
+    width: 100%;
+}
+
+.card p {
+    padding-bottom: 60px;
+}
+
+.card a {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 0.6rem;
+    position: absolute;
+    bottom: 1px;
+    padding-bottom: 30px;
+}
+
+.contact {
+    display: flex;
+    background: white;
+    width: 80%;
+    margin: auto;
+justify-content: center;
+align-items: center;
+}
+
+.contact-list {
+display: flex;
+width: 90%;
+justify-content: space-evenly;
+margin: auto;
+position: relative;
+}
+
+.contact-list::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    background: rgb(128, 126, 126);
+    bottom:  -30px;
+}
+.list {
+width: 20%;
+padding: 20px;
+}
+
+#contact-img img {
+    margin: 0 auto;
+    display: block;
+}
+
+.contact-list  h5 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.75rem;
+}
+
+.infos-p {
+    padding: 0;
+}
+
+.infos-p li {
+    list-style: none;
+}
+
+.infos-p a{
+font-size: 0.6rem;
+font-weight: 700;
+color: black;
+text-decoration: none;
+line-height: 1.5rem;
+padding-top: 0.5rem;
+}
+
+.list p {
+    font-weight: 700;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer-logos i {
+    font-size: 0.8 rem;
+    margin: 0.12px 10px 0;
+}
+
+.list a {
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: black;
+}
+
+.list h6 {
+    padding-top: 0.5rem;
+}
+
+.contact-medias {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    
+}
+
+.medias-text h3 {
+text-transform: uppercase;
+font-weight: 700;
+font-size: 0.75rem;
+    padding: 0 1rem;
+}
+
+.medias-text p {
+    font-weight: 700;
+    font-size: 0.6rem;
+    padding: 0.6rem 1rem;
+}
+
+.medias-logos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background: black;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer h3 {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: 300;
+}
+
+.footer ul {
+display: flex;
+    justify-content: space-evenly;
+    padding-left: 0;
+    height: 24px;
+} 
+
+.footer li {
+    display: inline;
+}
+
+@media screen and (max-width: 960px) {
+    .medias-logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+}
+.contact-list {
+display: grid;
+width: 90%;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr 1fr;
+margin: auto;
+position: relative;
+}
+.list {
+width: 100%;
+}
+
+.icon-part-container {
+    display: block;
+}
+.list-icon-part {
+    align-items: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+}
+
+
